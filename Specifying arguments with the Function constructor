@@ -1,0 +1,7 @@
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
+
+var adder = new Function("a", "b", "return a + b");
+
+adder(2, 6);
+
+// > 8
