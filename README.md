@@ -9,7 +9,7 @@ Jeśli.. pierwszy. argumentem. jest. prawda.. zawartość. z.. drugi. obiekt. je
 
 Wcześniej. ta. funkcja. przekierowany. do. jQuery.extend (prawda), ale. ta. miał. dwa. ograniczenia.
 
-Pierwszy. to. głęboko. połączone. tablice, które. prowadzić. do. obejścia. w. Highcharts. Drugi. to skopiowane. Właściwości. od. przedłużony. prototypy.
+Pierwszy. to. głęboko. połączone. tablice, które. prowadzić. do. obejścia.. Drugi. to skopiowane. Właściwości. od. przedłużony. prototypy.
 
 Prymitywy. i. tablice. są. kopiowane. powyżej. bezpośrednio.
 
