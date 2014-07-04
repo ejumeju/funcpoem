@@ -1,0 +1,20 @@
+name
+"mteo 0.4.1.beta.adder 4 lip 2014, 13:02:07 CEST"
+title
+"mteo 0.4.1.beta.adder 4 lip 2014, 13:02:07 CEST  |  Małgorzata Teodorowicz - Daily Gallery | Małgorzata Teodorowicz"
+beta
+true
+is
+ReferenceError: is is not defined
+_is
+true
+this
+Window → http://localhost/~uzytkownik/adder.html
+this._this
+Window → http://localhost/~uzytkownik/adder.html
+this.this
+undefined
+this
+Window → http://localhost/~uzytkownik/adder.html
+this.name
+"mteo 0.4.1.beta.adder 4 lip 2014, 13:02:07 CEST"
