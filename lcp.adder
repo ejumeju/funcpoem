@@ -1,0 +1,6 @@
+GET http://localhost/~uzytkownik/adder.html [HTTP/1.1 200 OK 2ms]
+undefined adder.html:80
+"mteo 0.4.2.beta.adder 4 lip 2014, 14:53:53 CEST" adder.html:80
+true adder.html:80
+self.name
+"mteo 0.4.2.beta.adder 4 lip 2014, 14:53:53 CEST"
