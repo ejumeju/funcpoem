@@ -1,0 +1,419 @@
+Kodowanie znaków dokumentu czystotekstowego nie zostało zadeklarowane. Podczas wyświetlania tego dokumentu w niektórych konfiguracjach przeglądarki niektóre znaki spoza zakresu US-ASCII (o ile występują) mogą wyglądać nieprawidłowo. Kodowanie znaków pliku musi być zadeklarowane w protokole przesyłania, albo plik musi używać znacznika kolejności bajtów jako sygnatury kodowania. adder.js
+Function.piorun
+undefined
+Function
+function Function()
+function
+SyntaxError: function statement requires a name
+function = Function()
+SyntaxError: function statement requires a name
+f = function = Function()
+SyntaxError: missing ( before formal parameters
+f = function
+SyntaxError: missing ( before formal parameters
+f = function()
+SyntaxError: syntax error
+f = Function()
+function anonymous()
+f
+function anonymous()
+f()
+undefined
+typeof f
+"function"
+f()
+undefined
+f = Function()
+function anonymous()
+f = Function(return 'zwracam ten str')
+SyntaxError: syntax error
+f = Function(){return 'zwracam ten str'}
+SyntaxError: missing ; before statement
+f = Function(){x return x='zwracam ten str'}
+SyntaxError: missing ; before statement
+f = Function(){return true}
+SyntaxError: missing ; before statement
+f = Function(){}
+SyntaxError: missing ; before statement
+f = Function()
+function anonymous()
+f = (Function(){return 'tyko ten str'})
+SyntaxError: missing ) in parenthetical
+f = (Function(){return 'tyko ten str'}))
+SyntaxError: missing ) in parenthetical
+f = (Function(){return 'tyko ten str'})()
+SyntaxError: missing ) in parenthetical
+f = (Function(){return true}))
+SyntaxError: missing ) in parenthetical
+f = Function(){return true}
+SyntaxError: missing ; before statement
+f = Function(){}
+SyntaxError: missing ; before statement
+f = Function()
+function anonymous()
+f = Function(return)
+SyntaxError: syntax error
+f = Function(return void)
+SyntaxError: syntax error
+f = Function(void)
+SyntaxError: syntax error
+f = Function()
+function anonymous()
+f.function()
+TypeError: f.function is not a function
+f.Function()
+TypeError: f.Function is not a function
+f = function()
+SyntaxError: syntax error
+f = Function()
+function anonymous()
+f.toSource
+function toSource()
+f.toSource()
+"(function anonymous() {
+
+})"
+f.anonymous
+undefined
+f.anonymous()
+TypeError: f.anonymous is not a function
+(function anonymous() { })
+function anonymous()
+(function anonymous() { ... })
+SyntaxError: syntax error
+(function anonymous() { })
+function anonymous()
+(function anonymous() { anonymous })
+function anonymous()
+(function anonymous() { typeof anonymous })
+function anonymous()
+(function anonymous() { typeof f })
+function anonymous()
+(function anonymous() { f.toSource })
+function anonymous()
+(function anonymous() { return f.toSource })
+function anonymous()
+(function anonymous() { return f.toSource })()
+function toSource()
+(function anonymous() { return f.toSource })()
+function toSource()
+(function anonymous() { return f.toSource })
+function anonymous()
+(function anonymous() { return f.toSource })()
+function toSource()
+(function anonymous() { return f.toSource })
+function anonymous()
+(function anonymous() { return f.toSource })
+function anonymous()
+(function anonymous() { return f.toSource })()
+function toSource()
+(function anonymous() { return f.toSource."" })()
+SyntaxError: missing name after . operator
+(function anonymous() { return f.toSource.toString })()
+function toString()
+(function anonymous() { return f.toSource.toString() })()
+"function toSource() {
+    [native code]
+}"
+typeof ((function anonymous() { return f.toSource.toString() })())
+"string"
+typeof (function anonymous() { return f.toSource.toString() })()
+"string"
+typeof (function anonymous() { return f.toSource.toString })()
+"function"
+typeof (function anonymous() { return f.toSource.toString })()
+"function"
+typeof ((function anonymous() { return f.toSource.toString })())
+"function"
+typeof (function anonymous() { return f })()
+"function"
+typeof (function anonymous() { return f() })()
+"undefined"
+f.toString
+function toString()
+f.toString()
+"function anonymous() {
+
+}"
+typeof f
+"function"
+typeof f()
+"undefined"
+typeof f.toString
+"function"
+typeof f.toString()
+"string"
+typeof f.toString(f.toSource)
+"string"
+typeof f.toString(f.toSource())
+"string"
+(typeof f.toString(f.toSource()))
+"string"
+(typeof f.toString(f.toSource()))()
+TypeError: "string" is not a function
+(typeof f.toString(f.toS()))()
+TypeError: f.toS is not a function
+(typeof f.toString(f.toSource()))()
+TypeError: "string" is not a function
+f
+function anonymous()
+f()
+undefined
+typeof f
+"function"
+if
+SyntaxError: missing ( before condition
+f
+function anonymous()
+f.name
+"anonymous"
+f.__lookupSetter__
+function __lookupSetter__()
+f.__lookupSetter__.toString
+function toString()
+f.__lookupSetter__.toString()
+"function __lookupSetter__() {
+    [native code]
+}"
+f.__lookupSetter__.toSource()
+"function __lookupSetter__() {
+    [native code]
+}"
+f.length.toSource()
+"(new Number(0))"
+f.length.toString()
+"0"
+f.length
+0
+typeof f.length
+"number"
+typeof f.length.toString()
+"string"
+typeof f.length.toSource()
+"string"
+f.hasOwnProperty
+function hasOwnProperty()
+f.hasOwnProperty()
+false
+f.constructor
+function Function()
+f.constructor()
+function anonymous()
+f.constructor()
+function anonymous()
+f.constructor.toString
+function toString()
+f.constructor.toSource
+function toSource()
+f.constructor.toSource()
+"function Function() {
+    [native code]
+}"
+f.constructor.toString()
+"function Function() {
+    [native code]
+}"
+f.constructor.name
+"Function"
+f.constructor.name()
+TypeError: f.constructor.name is not a function
+typeof f.constructor.name
+"string"
+typeof f.name
+"string"
+typeof f.name
+"string"
+f.name
+"anonymous"
+f.name()
+TypeError: f.name is not a function
+typeof f.name()
+TypeError: f.name is not a function
+typeof (f.name())
+TypeError: f.name is not a function
+typeof f.name()
+TypeError: f.name is not a function
+var er = f.name()
+TypeError: f.name is not a function
+er
+undefined
+typeof er
+"undefined"
+f.name.toString
+function toString()
+f.name.toString()
+"anonymous"
+f.name.to
+undefined
+f.name.toLocaleLowerCase
+function toLocaleLowerCase()
+f.name.toLocaleLowerCase()
+"anonymous"
+f.name.toUpperCase()
+"ANONYMOUS"
+f.name.toLocaleString
+function toLocaleString()
+f.name.toLocaleString()
+"anonymous"
+f.name.toUpperCase()
+"ANONYMOUS"
+undefined
+undefined
+{}
+undefined
+typeof {}
+"object"
+typeof []
+"object"
+typeof var
+SyntaxError: syntax error
+typeof values
+"function"
+alert
+function alert()
+alert()
+undefined
+alert("gosia")
+undefined
+alert("gosia")
+undefined
+a = alert("gosia")
+undefined
+a
+undefined
+a()
+TypeError: a is not a function
+a
+undefined
+typeof a
+"undefined"
+typeof a()
+TypeError: a is not a function
+typeof a
+"undefined"
+var a
+undefined
+typeof a
+"undefined"
+var a = alert("foo")
+undefined
+typeof a
+"undefined"
+a
+undefined
+a()
+TypeError: a is not a function
+atob
+function atob()
+atob()
+TypeError: Not enough arguments to Window.atob.
+atob.valueOf
+function valueOf()
+atob.valueOf()
+function atob()
+atob.toSource()
+"function atob() {
+    [native code]
+}"
+atob.isGenerator
+function isGenerator()
+atob.isGenerator()
+false
+window
+Window → http://localhost/~uzytkownik/adder.js
+w = window
+Window → http://localhost/~uzytkownik/adder.js
+w
+Window → http://localhost/~uzytkownik/adder.js
+w()
+TypeError: w is not a function
+w.watch
+function watch()
+w.watch()
+TypeError: missing argument 1 when calling function w.watch
+w.watch.toSource
+function toSource()
+()
+SyntaxError: syntax error
+w.watch.toSource()
+"function watch() {
+    [native code]
+}"
+w
+Window → http://localhost/~uzytkownik/adder.js
+w
+Window → http://localhost/~uzytkownik/adder.js
+f()
+undefined
+f
+function anonymous()
+typeof er
+"undefined"
+typeof addder
+"object"
+typeof addder()
+TypeError: addder is not a function
+addder
+Object {  }
+w
+Window → http://localhost/~uzytkownik/adder.js
+w.name
+""
+w.name = okno maja
+SyntaxError: missing ; before statement
+w.name = "okno maja"
+"okno maja"
+w.name
+"okno maja"
+w.name()
+TypeError: w.name is not a function
+typeof w.name
+"string"
+w.name
+"okno maja"
+window.name
+"okno maja"
+wname = w.name
+"okno maja"
+typeof wname
+"string"
+wname
+"okno maja"
+var wname
+undefined
+wname
+"okno maja"
+(typeof wname)
+"string"
+(typeof wname == 'tring')
+false
+(typeof wname == 'string')
+true
+typeof wname == 'string'
+true
+typeof wname === 'string'
+true
+typeof wname !== 'string'
+false
+typeof wname == 'string'
+true
+typeof (typeof wname == 'string')
+"boolean"
+typeof (typeof (typeof wname == 'string'))
+"string"
+(typeof (typeof wname == 'string')).toString()
+"boolean"
+typeof (typeof wname == 'string')
+"boolean"
+(typeof wname == 'string')
+true
+typeof wname == 'string'
+true
+window.wname
+"okno maja"
+wname
+"okno maja"
+tyopeof wname
+SyntaxError: missing ; before statement
+typeof wname
+"string"
