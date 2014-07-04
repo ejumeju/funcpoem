@@ -1,0 +1,30 @@
+fifox
+undefined
+w
+Window → http://localhost/~uzytkownik/adder.html
+arg
+Arguments { 0: "mteo 0.4.1.beta.adder 4 lip 2014, 13:02:07 CEST", 2 więcej… }
+argl
+1
+len
+472
+typeof len
+"number"
+typeof argl
+"number"
+typeof arg
+"object"
+typeof w
+"object"
+beta
+true
+tyopeof beta
+SyntaxError: missing ; before statement
+typeof beta
+"boolean"
+typeof d
+"object"
+typeof name
+"string"
+name
+"mteo 0.4.1.beta.adder 4 lip 2014, 13:02:07 CEST"
