@@ -1,0 +1,8 @@
+//https://developer.mozilla.org/pl/docs/DOM/element.className
+
+var elementNodeReference = document.getElementById("div1");
+
+if (elementNodeReference.className == "fixed") {
+  // pomiń elementy określonej klasy
+  goNextElement();
+};
