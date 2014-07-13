@@ -3,14 +3,17 @@ Script to take the variables from a location bar and turn them into JavaScript v
     Written by Mark Wilton-Jones, V1 13/9/2001, complete rewrite to V3 20-21/12/2001
           V4.0.0 updated 07/10/2004 to prevent possible cross site scripting
 *****************************************************************************************
+
 Please see http://www.howtocreate.co.uk/jslibs/ for details and a demo of this script
 Please see http://www.howtocreate.co.uk/jslibs/termsOfUse.html for terms of use
+
 This is version 4 of the script, allowing any valid variations of objects and arrays to
 be used as variable names. This version of the script checks for validity and fails without
 producing an error if invalid variations are used. The main portion is a full rewrite.
 The script now uses safeGet as the parent object of all variables instead of making them
 direct variables. If you want to revert to the older behaviour, you can override it as shown
 below.
+
 To use this script, if you want the variables to also be provided as part of an array,
 add the lines:
 <script type="text/javascript" language="javascript1.2">
@@ -23,13 +26,16 @@ var useArray = true;
 </script>
 <script src="PATH TO SCRIPT/locvar.js" type="text/javascript" language="javascript1.2"></script>
 into your page before any scripts that need the variables
+
 If you do not want the variables to also be provided as part of an array, add the line:
 <script src="PATH TO SCRIPT/locvar.js" type="text/javascript" language="javascript1.2"></script>
+
 note with these examples that varb%5B3%5D.fr%5B%27+t%27%20%20%5D%5B%20%22hi%22%5D is
 escape("varb[3].fr[' t'  ][ \"hi\"]")
 <input name="varb[3].fr[' t'][&quot;hi&quot;]"> will automatically escape when the form is
 submitted. If you generate the URLs yourself, you will have to escape the variable names, as
 well as their values.
+
 eg 1.
 if the URL ends with '?vara=help_me&varb%5B3%5D.fr%5B%27+t%27%20%20%5D%5B%20%22hi%22%5D=now_please&myImg.x=2&myImg.y=4' and
 useArray = true, the script will create the following (note, all are string variables):
@@ -45,6 +51,7 @@ getVars['vara'] = 'help_me';
 getVars['[3].fr[\' t\'  ][ "hi"]'] = 'now_please';
 getVars['myImg.x'] = '2';
 getVars['myImg.y'] = '4';
+
 eg 2.
 if the URL ends with '?vara=help_me&varb%5B3%5D.fr%5B%27+t%27%20%20%5D%5B%20%22hi%22%5D=now_please&myImg.x=2&myImg.y=4' and
 you do not put var useArray = true, the script will create the following (note, all are string
@@ -54,9 +61,11 @@ safeGet.varb[3].fr[' t']["hi"] = 'now_please';
 safeGet.myImg.x = '2';
 safeGet.myImg.y = '4';
 _______________________________________________________________________________________
+
 This script works by prefixing each variable name with 'window.safeGet.' and then working
 through checking each word in turn. If the word is found to be an object and the object
 does not exist then it is created. The same is done for any arrays.
+
 window.safeGet.myVar.myVar2[5]['dfg']=10 is calculated as:
 window.safeGet is an object. It exists. Do not create it.
 window.safeGet.myVar is an object. It does not exist. Create it.
