@@ -1,0 +1,4 @@
+.myClass {}
+.myClass.isSelected {
+  // do something
+}
